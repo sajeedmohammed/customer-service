@@ -6,7 +6,7 @@ import com.infosys.customerservice.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-//should
+
 
 @Service //->this makes the class as a service in class
 public class CustomerService
