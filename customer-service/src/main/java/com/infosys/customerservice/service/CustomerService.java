@@ -41,28 +41,7 @@ public class CustomerService
 
 
 
-    //Method to update an existing customer
-    public Customer updateCustomer(Long id, Customer updatedCustomer)
-    {
-        Customer existingCustomer = customerRepository.findById(id);
-
-        //if customer not found, throw an exception(you can replace with your own custom exception handling)
-        if(existingCustomer == null)
-        {
-            throw new RuntimeException("customer not found with id: "+id);
-        }
-
-        //update the existing customer fields
-
-        existingCustomer.setName(updatedCustomer.getName());
-        existingCustomer.setEmail(updatedCustomer.getEmail());
-        existingCustomer.setPhone(updatedCustomer.getPhone());
-        existingCustomer.setAddress(updatedCustomer.getAddress());
-
-        //save the updated customer
-
-        return customerRepository.save(existingCustomer);
-    }
+    
 
 
 
