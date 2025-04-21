@@ -19,4 +19,5 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: cd customer-service && mvn clean install
+        run: mvn clean install
+        working-directory: ./customer-service
